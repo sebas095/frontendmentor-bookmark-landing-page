@@ -1,0 +1,8 @@
+header.header
+  .logo
+    img(src="", alt="").logo__img
+  nav.main-nav.nav
+    ul.main-menu
+      each item in navItems
+        li.main-menu__item: a(href=`${item.href}`)= item.title
+    button#login-button.login-button Login
