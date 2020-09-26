@@ -1,8 +1,14 @@
 header.header
-  .logo
-    img(src="", alt="").logo__img
-  nav.main-nav.nav
+  #top-bar.top-bar
+    .top-bar__logo
+      img(src="assets/icons/logo-bookmark.svg", alt="logo").top-bar__img
+    img(src="assets/icons/icon-hamburger.svg", alt="icon-menu")#icon-menu.top-bar__icon
+
+  nav#main-nav.main-nav.nav
     ul.main-menu
       each item in navItems
-        li.main-menu__item: a(href=`${item.href}`)= item.title
+        li.main-menu__item: a(href=`${item.href}`).main-menu__link= item.title
     button#login-button.login-button Login
+    .social-icons
+      img(src="assets/icons/icon-facebook.svg", alt="").social-icons__img
+      img(src="assets/icons/icon-twitter.svg", alt="").social-icons__img
