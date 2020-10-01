@@ -5,20 +5,23 @@ section.section.section--first
     h1.section__title A Simple Bookmark Manager
     p.section__text A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.
     .buttons
-      button.button Get it on Chrome
-      button.button Get it on Firefox
+      button.button.button--purple Get it on Chrome
+      button.button.button--white Get it on Firefox
 
 section#features.section--second
   h2.section__title Features
   p.section__text Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.
-  ul.tabs
+  ul#tabs.tabs
+    li.tabs__item.tabs__item--active Simple Bookmarking
+    li.tabs__item Speedy Searching
+    li.tabs__item Easy Sharing
+  .tabs__container
     each tab in tabsItems
-      li.tabs__item= tab.section
-        article.tabs__content
-          img(src=`${tab.img}`, alt=`${tab.title}`)
-          h2.tabs__title= tab.title
-          p.tabs__text= tab.text
-          button.button More Info
+      article(class=`tabs__content ${tab.class} ${tab.active ? "tabs__content--active" : ""}`)
+        img(src=`${tab.img}`, alt=`${tab.title}`).tabs__img
+        h2.tabs__title= tab.title
+        p.tabs__text= tab.text
+        button.button.button--purple More Info
 
 section#download.section.section--third
   h2.section__title Download the extension

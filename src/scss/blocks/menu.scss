@@ -30,10 +30,8 @@
   &__item {
     padding: 1rem;
     margin: 0.5rem 0;
-    border: 1px solid var(--grayish-blue);
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
+    border: none;
+    border-top: 1px solid var(--grayish-blue);
     width: 100%;
     cursor: pointer;
 
