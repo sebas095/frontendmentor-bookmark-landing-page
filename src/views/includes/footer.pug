@@ -1,16 +1,20 @@
-footer.footer
-  h3.footer__title
-  p.footer__text
+footer.footer#contact
+  h3.footer__title 35,000+ already joined
+  p.footer__subtitle Stay up-to-date with what we’re doing
   form#form.form
-    input(type="email" placeholder="Enter your email address").form__input
-    button.button Contact Us
-//- nav.footer-nav.nav
-//-   .logo
-//-     img(src="", alt="").logo__img
-//-   nav.main-nav.nav
-//-     ul.main-menu
-//-       each item in navItems
-//-         li.main-menu__item: a(href=`${item.href}`)= item.title
-//-     .social-networwks
-//-       a(href="#"): i.fa.fa-facebook
-//-       a(href="#"): i.fa.fa-twitter
+    .form-field
+      input(type="email" placeholder="Enter your email address").form__input
+      .form__input-error Whoops, make sure it's an email
+      button.button.button--red Contact Us
+nav.footer-nav.nav
+  .logo
+    img(src="", alt="").logo__img
+  nav.footer__menu
+    .logo
+      img(src="assets/icons/logo-bookmark.svg", alt="logo").logo__img
+    ul.footer-menu
+      each item in navItems
+        li.footer-menu__item.footer-menu__item--border-none: a(href=`${item.href}`).footer-menu__link= item.title
+    .social-icons
+      img(src="assets/icons/icon-facebook.svg", alt="").social-icons__img
+      img(src="assets/icons/icon-twitter.svg", alt="").social-icons__img
