@@ -38,9 +38,11 @@ section#download.section.section--third
 section#faqs.section.section--fourth
   h2.section__title Frequently Asked Questions
   p.section__text Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us. 
-  .accordion
+  #accordion.accordion
     each item in accordionItems
       .accordion__item
         h3.accordion__title= item.title 
-        p.accordion__text= item.text  
-    button.button More Info
+        .accordion__text
+          p= item.text
+    .button-container  
+      button.button.button--purple More Info
