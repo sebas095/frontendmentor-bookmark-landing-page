@@ -5,6 +5,11 @@
   margin-bottom: 7rem;
 }
 
+.button-container {
+  width: 100%;
+  text-align: center;
+}
+
 .button {
   background: none;
   padding: 1rem;
@@ -24,5 +29,14 @@
     background-color: var(--soft-blue);
     color: var(--white);
     font-weight: 400;
+  }
+
+  &--red {
+    background-color: var(--soft-red);
+    color: var(--white);
+    font-weight: 400;
+    width: 100%;
+    box-shadow: 0 0 0 4px var(--soft-red);
+    padding: 0.9rem 0;
   }
 }
