@@ -9,7 +9,7 @@
     justify-content: space-between;
 
     &::after {
-      content: url("/assets/icons/icon-arrow.svg");
+      content: url("../assets/icons/icon-arrow.svg");
       transform: rotate(0);
       filter: hue-rotate(0);
       transition: transform 0.2s, filter 0.2s;
