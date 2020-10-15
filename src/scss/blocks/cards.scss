@@ -2,8 +2,8 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-    padding: 0 11rem;
-    width: 1440px;
+    padding: 0 4rem;
+    //width: 100%;
   }
 }
 
@@ -40,6 +40,7 @@
 
     &:last-child {
       bottom: -60px;
+      //margin-right: 0;
     }
   }
 }

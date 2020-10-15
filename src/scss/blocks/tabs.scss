@@ -114,14 +114,30 @@
     margin-bottom: 4rem;
   }
 
-  &__title {
+  &__text-container {
+    text-align: left;
+    width: 310px;
+
     @media screen and(min-width:768px) {
-      letter-spacing: 2px;
+      width: 375px;
+    }
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 400;
+
+    @media screen and(min-width:768px) {
       font-weight: 400;
+      letter-spacing: 2px;
     }
   }
 
   &__text {
+    font-weight: 400;
+    color: var(--grayish-blue);
+    line-height: 1.7;
+
     @media screen and(min-width:768px) {
       line-height: 1.5;
       font-weight: 300;

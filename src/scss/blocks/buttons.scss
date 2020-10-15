@@ -19,6 +19,10 @@
 .button-container {
   width: 100%;
 
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+
   &--center {
     text-align: center;
   }
@@ -67,5 +71,14 @@
     width: 100%;
     box-shadow: 0 0 0 4px var(--soft-red);
     padding: 0.9rem 0;
+
+    @media screen and (min-width: 768px) {
+      width: 25%;
+    }
+  }
+
+  &--padding-x-1rem {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }

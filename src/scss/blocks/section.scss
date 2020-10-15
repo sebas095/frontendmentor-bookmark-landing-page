@@ -7,6 +7,7 @@
     &--text {
       @media screen and (min-width: 768px) {
         width: 450px;
+        margin-left: 2.5rem;
       }
     }
   }
@@ -18,9 +19,11 @@
   }
 
   &__title {
-    font-size: 3rem;
-    &--first {
-      text-align: left;
+    font-size: 2rem;
+    @media screen and(min-width:768px) {
+      &--first {
+        text-align: left;
+      }
     }
   }
 
@@ -39,6 +42,12 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 8rem;
+      }
+
+      &--center {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
 
