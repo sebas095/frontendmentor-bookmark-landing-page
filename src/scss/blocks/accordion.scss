@@ -29,7 +29,10 @@
     border-bottom: 1px solid var(--grayish-blue);
 
     & p {
+      color: var(--grayish-blue);
       padding: 2rem 0;
+      line-height: 1.7;
+      text-align: left;
     }
 
     &--active {
